@@ -1,1 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monte Nido 4th of July 2026</title>
+
+<style>
+:root{
+    --red:#b22234;
+    --blue:#3c3b6e;
+    --light:#f8f9fb;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            #b22234 0 40px,
+            #ffffff 40px 80px
+        );
+    color:#333;
+    line-height:1.6;
+}
+.hero{
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+     url("https://images.gofundme.com/sH1V1acizSGojJOit8EYFH3tSho=/720x405/https://d2g8igdw686xgo.cloudfront.net/104246973_1779941862872371_r.webp?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:1.5rem;
+    font-weight:400;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn-red{
+    background:var(--red);
+    color:white;
+}
+
+.btn-blue{
+    background:var(--blue);
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:50px 20px 0;
+}
+.card{
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    border:8px solid var(--blue);
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.card h2{
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+h2{
+    color:var(--white);
+    margin-bottom:20px;
+}
+
+.details{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.detail{
+    background:#f4f6fb;
+    padding:20px;
+    border-radius:8px;
+}
+
+.detail strong{
+    color:var(--red);
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+.notice{
+    background:#fff8e6;
+    border-left:5px solid #e0a800;
+    padding:18px;
+    margin-top:15px;
+}
+
+.footer{
+    text-align:center;
+    padding:40px;
+    color:#666;
+}
+
+.countdown{
+    font-size:1.2rem;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .hero h2{
+        font-size:1.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>Monte Nido 4th of July 2026</h1>
+    <h2>America 250 • The Great American Picnic</h2>
+
+    <div class="buttons">
+
+        <a class="btn btn-blue"
+           href="mailto:montenidojuly4th@gmail.com">
+           Volunteer
+        </a>
+    </div>
+
+    <div class="countdown" id="countdown"></div>
+</section>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Event Details</h2>
+
+        <div class="details">
+
+            <div class="detail">
+                <strong>🎈 Parade</strong><br>
+                10:30 AM start <br>
+                Parade members gather 10a<br>
+                Edenwild Bridge
+            </div>
+
+            <div class="detail">
+                <strong>🌳 Picnic</strong><br>
+                Following the Parade<br>
+                Until approximately 2:00 PM<br>
+                Fleeman's Meadow
+            </div>
+
+ 
+
+            <div class="detail">
+                <strong>🇺🇸 Theme</strong><br>
+                America 250<br>
+                The Great American Picnic
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>What to Expect</h2>
+
+        <ul>
+            <li>🍔 Burger stand with food available for purchase</li>
+            <li>🎸 Live music from Mudslide Mojo featuring neighborhood musicians</li>
+            <li>🎯 Lawn games and family activities</li>
+            <li>🚲 Decorated bikes, wagons, scooters, strollers and floats</li>
+            <li>🇺🇸 A community celebration of America's 250th birthday</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Help Keep the Tradition Alive</h2>
+
+        <p>
+            This year's celebration is being organized entirely by
+            community volunteers. Donations help cover permits,
+            insurance, road closures, and event operations.
+        </p>
+
+        <br>
+
+        <a class="btn btn-red"
+           href="https://www.gofundme.com/f/monte-nido-4th-of-july-2026"
+           target="_blank">
+           Support the Event
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Volunteers Needed</h2>
+
+        <ul>
+            <li>Parade Judges</li>
+            <li>Watermelon & Water Station</li>
+            <li>Meadow Decorating Team</li>
+        </ul>
+
+        <p style="margin-top:15px;">
+            We'd love your help making this community tradition a success.
+        </p>
+  <br>
+
+        <a class="btn btn-red"
+           href="mailto:montenidojuly4th@gmail.com"
+           target="_blank">
+           Volunteer
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Important Event Policy</h2>
+
+        <div class="notice">
+            DUE TO INSURANCE REQUIREMENTS, ANIMALS CANNOT ATTEND THIS YEAR'S PARADE OR PICNIC, INCLUDING DOGS AND HORSES.  <br><br> This is clearly very disappointing and not consistent with the spirit of Monte Nido, but with the short notice to pull everything together by just a couple of neighbors taking initiative, it added too much complexity to solve this year.  If any neighbor would like to step up and take ownership of this to figure out how to include horses, please don't hesitate to reach out via the Volunteer button and you can join us. We would welcome it!<br><br>
+            Thank you for your understanding.
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+const eventDate = new Date("July 4, 2026 10:30:00").getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance < 0) {
+        document.getElementById("countdown").innerHTML =
+            "The celebration is underway!";
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    document.getElementById("countdown").innerHTML =
+        days + " days until the parade begins";
+}
+
+updateCountdown();
+setInterval(updateCountdown, 60000);
+</script>
+
+</body>
+</html>
 
